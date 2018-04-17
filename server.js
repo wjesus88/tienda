@@ -5,7 +5,7 @@ var server = express();
 
 var port = process.env.PORT || 8080;
 
-server.set('view engine', 'jade');
+server.set('view engine', 'ejs');
 server.set('views', 'views');
 
 //if (process.env.NODE_ENV === 'development') {
@@ -19,12 +19,12 @@ server.set('views', 'views');
 //}
 
 
-server.get('*', (req, res) => {
+server.get('/', (req, res) => {
     // if (process.env.NODE_ENV === 'developemnt') {
     //     res.render('shop', {mode: process.env.MODE});
     // }
     // else {
-        res.render('shop');
+        res.render('index');
     
 
     //}
