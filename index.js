@@ -24,7 +24,8 @@ server.get('/', (req, res) => {
     //     res.render('shop', {mode: process.env.MODE});
     // }
     // else {
-        res.render('shop');
+        //res.render('shop');
+        res.sendFile('index.html', {root: '.'}); 
     //}
 });
 
