@@ -5,7 +5,7 @@ var server = express();
 
 var port = process.env.PORT || 8080;
 
-server.set('view engine', 'ejs');
+server.set('view engine', 'jade');
 server.set('views', 'views');
 
 if (process.env.NODE_ENV === 'development') {
