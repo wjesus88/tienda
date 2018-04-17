@@ -3,10 +3,10 @@ const env = require('dotenv').config();
 const express = require('express');
 var server = express();
 
+var port = process.env.PORT || 8080;
 
 server.set('view engine', 'jade');
 server.set('views', 'views');
-var port = process.env.PORT || 8080;
 
 //if (process.env.NODE_ENV === 'development') {
     // if (process.env.MODE === 'no-build') {
@@ -24,8 +24,9 @@ server.get('*', (req, res) => {
     //     res.render('shop', {mode: process.env.MODE});
     // }
     // else {
-        //res.render('shop');
-        res.sendFile('index.html', {root: '.'}); 
+        res.render('shop');
+    
+
     //}
 });
 
