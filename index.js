@@ -19,7 +19,7 @@ var port = process.env.PORT || 8080;
 //}
 
 
-server.get('/', (req, res) => {
+server.get('*', (req, res) => {
     // if (process.env.NODE_ENV === 'developemnt') {
     //     res.render('shop', {mode: process.env.MODE});
     // }
