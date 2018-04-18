@@ -4,7 +4,7 @@
   "authors": [
     "The Polymer Authors"
   ],
-  "private": false,
+  "private": true,
   "dependencies": {
     "polymer": "polymer/polymer#^2.0.0",
     "app-layout": "polymerelements/app-layout#^2.0.0",
