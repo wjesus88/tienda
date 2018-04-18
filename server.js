@@ -19,14 +19,14 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 
-server.use(express.static(__dirname + '/public'));
+//server.use(express.static(__dirname + '/public'));
 
 server.get('/', (req, res) => {
     if (process.env.NODE_ENV === 'developemnt') {
-         res.render('shop', {mode: process.env.MODE});
+        res.render('shopy', {mode: process.env.MODE});
     }
      else {
-        res.render('shop');
+        res.render('shopy');
     }
 });
 
