@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'development') {
         server.use(express.static(path.join(__dirname, 'apps/shop')));
     }
     else if (process.env.MODE === 'build') {
-        server.use(express.static(path.join(__dirname, 'apps/shop/build/bundled')));
+        server.use(express.static(path.join(__dirname, 'apps/shop')));
     }
    // server.use(express.static(path.join(__dirname, 'static')));
 }
