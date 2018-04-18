@@ -19,7 +19,7 @@ server.set('views', 'views');
 // }
 
 //server.use(express.static(path.join(__dirname, 'apps/shop')));
-server.use(express.static(path.join(__dirname, 'apps/shop/bower_components')));
+server.use(express.static(path.join(__dirname, 'apps/shop')));
 //server.use(express.static(__dirname + '/public'));
 
 server.get('/', (req, res) => {
